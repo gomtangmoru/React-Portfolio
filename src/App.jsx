@@ -3,23 +3,31 @@ import './App.css';
 import lang_en from './/lang/en-US.json';import lang_ko from './/lang/ko-KR.json';
 
 
-/*function language_init(){
+function language_init(){
     let lang = navigator.language || navigator.userLanguage;
     if(lang === 'ko-KR'){
         transKorean()
     }else{
-        return 'en';
+        transEnglish()
     }
-}*/
-function transKorean(){
-    console.log(lang_ko,lang_en)
 }
-
+function transKorean(){
+    console.log(lang_ko.title,lang_ko)
+    document.title = lang_ko.title
+    document.querySelector('.index').innerHTML = lang_ko.index
+    document.querySelector('.title').innerHTML = lang_ko.title
+}
+function transEnglish(){
+    console.log(lang_en.title,lang_en)
+    document.title = lang_en.title
+    document.querySelector('.index').innerHTML = lang_en.index
+    document.querySelector('.title').innerHTML = lang_en.title
+}
 
 function Index() {
     useEffect(() => {
         document.title = "뿌직";
-
+        language_init()
     }, []);
     return (
         <div className={'container'}>
@@ -31,7 +39,9 @@ function Index() {
                 {/*</div>*/}
             </div>
             <div className={'navbar'}>
-                <a onClick={transKorean}>한국어</a>
+                <p onClick={transKorean}>한국어</p>
+                <p>         </p>
+                <p onClick={transEnglish}>English</p>
             </div>
             <div className={'name-blur'}></div>
 
@@ -44,7 +54,7 @@ function Index() {
                 <div className={'profile'}></div>
             </div>
             <div className={'longbox'}>
-                <h2 className={'title'}>Hi! 👋</h2>
+                <h2 className={'title'}>Hd! 👋</h2>
                 <p className={'index'}>INDEX TEST <br/> BR TEST</p>
             </div>
         </div>

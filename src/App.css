@@ -19,15 +19,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 97%;
     height: 50px;
     background-color: #c3b0b0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     border-radius: 25px 25px 0 0;
-
+    font-size: 20px;
+    justify-content: flex-end;
 }
 .container {
     top: 30px;
@@ -120,7 +120,6 @@
 }
 p {
     font-family: YEONGJUPunggiGinsengTTF;
-    font-size: 20px;
     color: white;
     white-space: pre-wrap;
 
@@ -129,7 +128,8 @@ p {
 
 .index{
     position: absolute;
-    left: 20px;
+    left: 45px;
+    font-size: 40px;
     white-space: nowrap;
 
 
@@ -141,9 +141,9 @@ h2{
 .name {
     font-family: TTLaundryGothicB;
     white-space: nowrap;
-    top: 12px;
+    top: 80px;
     left: 300px;
-    font-size: 22px;
+    font-size: 35px;
     margin-left: 20px;
     color: white;
     position: absolute;

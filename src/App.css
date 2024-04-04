@@ -15,6 +15,20 @@
     border-radius: 25px 25px 0 0;
     filter: blur(5px);
 }
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #c3b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 25px 25px 0 0;
+
+}
 .container {
     top: 30px;
     bottom: 30px;
@@ -89,8 +103,8 @@
 }
 .title {
     white-space: nowrap;
-    top: 90px;
-    left: 300px;
+    top: -180px;
+    left: 20px;
     margin-left: 20px;
     position: absolute;
     color: white;
@@ -100,16 +114,29 @@
     background-color: #FFFFFF;
     width: 10px;
     height: 2000px;
-    top: 400px;
+    top: 440px;
     margin: 170px;
     position: absolute;
 }
+p {
+    font-family: YEONGJUPunggiGinsengTTF;
+    font-size: 20px;
+    color: white;
+    white-space: pre-wrap;
+
+
+}
+
 .index{
+    position: absolute;
+    left: 20px;
+    white-space: nowrap;
+
 
 }
 h2{
     font-family: YEONGJUPunggiGinsengTTF;
-    font-size: 50px;
+    font-size: 70px;
 }
 .name {
     font-family: TTLaundryGothicB;
@@ -121,10 +148,6 @@ h2{
     color: white;
     position: absolute;
     opacity: 1;
-}
-.p {
-    font-family: 'YEONGJUPunggiGinsengTTF'
-
 }
 
 

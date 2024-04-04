@@ -40,7 +40,7 @@ function Index() {
             </div>
             <div className={'navbar'}>
                 <p onClick={transKorean}>한국어</p>
-                <p>         </p>
+                <p></p>
                 <p onClick={transEnglish}>English</p>
             </div>
             <div className={'name-blur'}></div>
@@ -55,8 +55,9 @@ function Index() {
             </div>
             <div className={'longbox'}>
                 <h2 className={'title'}>Hd! 👋</h2>
-                <p className={'index'}>INDEX TEST <br/> BR TEST</p>
             </div>
+            <p className={'index'}>INDEX TEST <br/> BR TEST</p>
+
         </div>
     );
 }

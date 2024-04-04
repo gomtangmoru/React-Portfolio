@@ -128,10 +128,12 @@ p {
 
 .index{
     position: absolute;
-    left: 45px;
+    top: 600px;
+    left: 230px;
+    width: 80%;
+    height: 80%;
     font-size: 40px;
-    white-space: nowrap;
-
+    /*white-space: nowrap;*/
 
 }
 h2{
